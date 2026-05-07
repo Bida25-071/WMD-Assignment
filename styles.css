@@ -42,9 +42,10 @@ img {
          transition: transform 0.3s ease; 
          } 
          
-         img:hover  img { 
+         img:hover  { 
  
-             transform: scale(1.05); }
+             transform: scale(1.05);
+             }
 
 .card img {
     width: 100%;
@@ -60,8 +61,10 @@ img {
 }
  
 
-p, h2, h3 {
-text-align: left;
+main p,
+main h2, 
+main h3 {
+    text-align: left;
 }
 
 
@@ -76,7 +79,7 @@ transition: color 0.3s ease;
 color: #000000;
 }
 
- 
+
 
 
 .navbar-brand {
@@ -132,5 +135,10 @@ p, .lead, .card-text {
 #feedback.show {
     opacity: 1;
 
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
 }
 

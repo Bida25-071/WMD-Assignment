@@ -59,36 +59,57 @@
 
 </header>
 
+<main class="container my-5">
 
+<p class="text-center mt-5">
+    Have questions? Want to adopt or volunteer? We'd love to hear from you!
+</p>
 
-<main class="container mt-5">
-<h2>Contact Us</h2>
-<p>Have questions? Want to adopt or volunteer? We'd love to hear from you!</p>
+<div class="card p-4 shadow-sm mb-4 text-center">
+    <h4 class="mb-3">Our Contact Information</h4>
 
-<h3>Our Contact Information</h3>
-<p>Email: adoptions@wamecuddlescrew.com</p>
-<p>Phone; +267 71 284 656</p>
-<p>Location: Tlokweng, Gaborone, Botswana</p>
+    <p>📧 Email: <a href="mailto:adoptions@wamecuddlescrew.com">
+        adoptions@wamecuddlescrew.com</a>
+    </p>
 
-<h3>Send Us a Message!</h3>
+    <p>📞 Phone: <a href="tel:+26771284656">
+        +267 71 284 656</a>
+    </p>
 
-<form>
-    <label>Full Names:</label>
-    <input type="text" placeholder="Enter your full names"><br><br>
+    <p>📍Location:  Tlokweng, Gaborone, Botswana</p> 
+</div>
 
-    <label>Email Address:</label><br>
-    <input type="email" placeholder="Enter your email"><br><br>
+<h3 class="text-center mb-3">Send Us a Message!</h3>
 
-    <label>Your Message:</label><br>
-    <textarea rows="5" placeholder="Write your message here"></textarea><br><br>
+<form class="card p-3 shadow-sm">
 
-    <button type="submit">Send Message</button>
+    <div class="mb-3">
+        <label class="form-label">Full Names:</label>
+        <input type="text" class="form-control" placeholder="Enter your full names">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email Address:</label>
+        <input type="email" class="form-control" placeholder="Enter your email">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Your Message:</label>
+        <textarea class="form-control" rows="5" placeholder="Write your message here"></textarea>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
     
 </form>    
 
-    <div id="feedback" class="alert alert-success">Thank you! Your message has been sent.</div>
+    <div id="feedback" class="alert alert-success d-none mt-3">
+        Thank you! Your message has been sent.
+    </div>
 
-<script src="contact.js"></script>
+<script src="script.js"></script>
+</main>
 
 <footer class="text-center py-3 bg-dark text-light">
    &copy; 2026 Wame's Cuddle Crew
