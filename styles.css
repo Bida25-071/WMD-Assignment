@@ -1,18 +1,10 @@
-
-    
-
-
-.hero logo{ 
-            text-align: center;
-
-
-             }
-
 header{
 background-color: #6bd8ff; 
 color: #ffffff;
 text-align: center; 
 padding: 20px;
+text-shadow: 2px 2px 0px #666 ;
+
 }
 
 header nav a {
@@ -27,7 +19,7 @@ background-color: #fdf6f0;
 color: #333;
 }
 
-.contact, .testimonials, .blog-post, .pets, .about, .faq {
+.contact, .testimonials, .blog-post, .pets, .about, .faq, .home {
 background-color: #e0f7fa;
 padding: 20px;
 border-radius: 10px;
@@ -40,12 +32,12 @@ border-radius: 10px;
 }
 
 img { 
-    width: 1000px; 
-     max-width: 70%; 
+    width: 400px; 
+     max-width: 100%; 
       height: auto; 
-       border-radius: 5px; 
+       border-radius: 15px; 
        display: block; 
-       margin: 10px auto; 
+       margin: auto 10px; 
         box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
          transition: transform 0.3s ease; 
          } 
@@ -54,10 +46,19 @@ img {
  
              transform: scale(1.05); }
 
-img {
-display: block;
-margin: 10px auto; 
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
 }
+ 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+ 
 
 p, h2, h3 {
 text-align: left;
@@ -75,12 +76,8 @@ transition: color 0.3s ease;
 color: #000000;
 }
 
+ 
 
-.navbar .nav-link.active {
-color: #ffffff; 
-text-decoration: underline;
-font-weight: 600;
-}
 
 .navbar-brand {
     font-size: 1rem;
@@ -95,13 +92,15 @@ h1, h2, h3, .hero h2, section h2, .card-title {
 p, .lead, .card-text {
     font-size: 1rem;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 100vh; 
-    background-image: url('cute kitten.jpg'); 
+     height: 90vh; 
+    background-image: url('images/cute kitten.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,7 +124,13 @@ p, .lead, .card-text {
     z-index: 2; 
 }
 
+#feedback {
+    opacity: 0;
+    transition: 0.5s;
+}
 
+#feedback.show {
+    opacity: 1;
 
+}
 
-             
