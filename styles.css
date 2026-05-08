@@ -17,6 +17,7 @@ font-weight: 600;
 body {
 background-color: #fdf6f0;
 color: #333;
+transition: background-color 0.3s, color 0.3s; 
 }
 
 .contact, .testimonials, .blog-post, .pets, .about, .faq, .home {
@@ -127,18 +128,23 @@ p, .lead, .card-text {
     z-index: 2; 
 }
 
-#feedback {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-#feedback.show {
-    opacity: 1;
-
-}
 
 form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto ;
 }
 
+body.dark-mode { 
+
+    background-color: #333333; 
+
+    color: #f9f9f9; 
+
+} 
+
+body.dark-mode nav { background-color: #333333;
+                     color: #f9f9f9
+} 
+
+body.dark-mode { background-color: #333333;}
+#theme-toggle { padding: 8px 16px; cursor: pointer; margin: 10px; } 
